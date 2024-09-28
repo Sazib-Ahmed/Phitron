@@ -1,0 +1,11 @@
+Step 1: Go to Terminal
+
+Step 2: Type sudo apt install codeblocks
+
+Step 3: Install gcc compiler if not installed with command
+				sudo apt install gcc
+				
+				check if gcc installed with command
+				gcc --version
+				
+Step 4: Open Codeblocks and set default compiler to GNU gcc compiler 
