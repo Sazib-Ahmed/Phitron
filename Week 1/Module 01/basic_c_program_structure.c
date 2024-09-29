@@ -28,3 +28,10 @@ int sum(int x, int y){
     return x+y;
 }
 
+/*
+int 4 byte
+float 4 byte 
+char 1 byte
+double 8 byte
+bool 1 bit
+*/
