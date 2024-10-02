@@ -1,1 +1,7 @@
-3.750000
+Enter a interger and a character seperated by space: 
+
+Switch case 1:
+	Inside default: You did not entered number between 1 to 5.
+
+Switch case 2:
+	Inside case d
