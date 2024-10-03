@@ -1,8 +1,1 @@
-int= 0002, 
-short int= 0002, 
-long int= 0003, 
-long long int= 0004, 
-float= 5.00, 
-double= 6.0000, 
-long double=7.000000, 
-char= Ð
+Hi, I am Sazib
