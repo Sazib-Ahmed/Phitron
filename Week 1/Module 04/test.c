@@ -1,28 +1,35 @@
 #include<stdio.h>
 
 
+int main() {
 
-
-//Kahan pina 2
-
-int main()
-{
-    int n=0;
-    scanf("%d", &n);
-    for(int i=1; i<=n; i++)
-    {
-        printf("%d ", i);
-        if(i%3==0 || i%5==0)
-        {
-            printf("Yes\n");
-        }
-        else
-        {
-            printf("No\n");
-        }
-    }
-
+    int x, y, z;
+    scanf("%d %d %d", &x, &y, &z);
+    printf("%d",(x+y+z));
+    return 0;
 }
+
+
+// //Kahan pina 3
+
+// int main()
+// {
+//     int n=0;
+//     scanf("%d", &n);
+//     for(int i=1; i<=n; i++)
+//     {
+//         printf("%d ", i);
+//         if(i%3==0 || i%5==0)
+//         {
+//             printf("Yes\n");
+//         }
+//         else
+//         {
+//             printf("No\n");
+//         }
+//     }
+
+// }
 
 
 
