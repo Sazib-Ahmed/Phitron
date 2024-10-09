@@ -1,0 +1,6 @@
+The Array: 9 5 3 7 
+Len = 4
+Min = 3 
+Max = 9
+Sum = 24
+Avg = 6.00
