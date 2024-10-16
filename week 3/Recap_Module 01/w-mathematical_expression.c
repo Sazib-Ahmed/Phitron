@@ -1,3 +1,39 @@
+#include<stdio.h>
+
+int main(){
+    int a, b, c;
+    char x, y;
+    scanf("%d %c %d %c %d", &a, &x, &b, &y, &c);
+
+    if(x=='+'){
+        if((a+b)==c){
+            printf("Yes");
+        }
+        else{
+            printf("%d", a+b);
+        }
+    }
+    else if(x=='-'){
+        if((a-b)==c){
+            printf("Yes");
+        }
+        else{
+            printf("%d", a-b);
+        }
+    }
+    else if(x=='*'){
+        if((a*b)==c){
+            printf("Yes");
+        }
+        else{
+            printf("%d", a*b);
+        }
+    }
+
+    return 0;
+}
+
+/*
 #include <stdio.h>
 
 int main() {
@@ -25,3 +61,5 @@ int main() {
 
     return 0;
 }
+
+*/
