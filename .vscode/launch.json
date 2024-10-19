@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/Coding/Phitron/Week_3/Recap_Module_03",
-      "program": "d:/Coding/Phitron/Week_3/Recap_Module_03/build/Debug/outDebug",
+      "cwd": "c:/Github/Phitron/Week_3/Recap_Module_03",
+      "program": "c:/Github/Phitron/Week_3/Recap_Module_03/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
