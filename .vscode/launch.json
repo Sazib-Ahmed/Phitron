@@ -8,10 +8,10 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/Coding/Phitron/Week_3/Recap_Module_03", // Your project directory
-      "program": "d:/Coding/Phitron/Week_3/Recap_Module_03/build/Debug/outDebug", // Path to the compiled executable
+      "cwd": "d:/Coding/Phitron/Week_3/Recap_Module_03",
+      "program": "d:/Coding/Phitron/Week_3/Recap_Module_03/build/Debug/outDebug",
       "MIMode": "gdb",
-      "miDebuggerPath": "C:/MinGW/bin/gdb.exe", // Path to gdb
+      "miDebuggerPath": "gdb",
       "setupCommands": [
         {
           "description": "Enable pretty-printing for gdb",
