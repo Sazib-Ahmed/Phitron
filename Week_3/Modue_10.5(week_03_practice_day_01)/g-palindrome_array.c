@@ -34,23 +34,26 @@ int main() {
 }
 
 
-// Given a number N
-//  and an array A
-//  of N
-//  numbers. Determine if it's palindrome or not.
+/*
+https://codeforces.com/group/MWSDmqGsZm/contest/219856/problem/G
 
-// Note:
+G. Conversion
+time limit per test2 seconds
+memory limit per test64 megabytes
+Given a string S. Print the origin string after replacing the following:
 
-// An array is called palindrome if it reads the same backward and forward, for example, arrays { 1 } and { 1,2,3,2,1 } are palindromes, while arrays { 1,12 } and { 4,7,5,4 } are not.
+Replace every comma character ',' with a space character.
+Replace every capital character in S with its respective small character and Vice Versa.
+Input
+Only one line contains a string S (1 ≤ |S| ≤ 105) where |S| is the length of the string and it consists of lower and upper English letters and comma character ','.
 
-// Input
-// First line contains a number N
-//  (1≤N≤105)
-//  number of elements.
+Output
+Print the string after the conversion.
 
-// Second line contains N
-//  numbers (1≤Ai≤109)
-// .
+Example
+InputCopy
+happy,NewYear,enjoy
+OutputCopy
+HAPPY nEWyEAR ENJOY
 
-// Output
-// Print "YES" (without quotes) if A is a palindrome array, otherwise, print "NO" (without quotes).
+*/

@@ -24,6 +24,8 @@ int main() {
 
 
 /*
+https://codeforces.com/group/MWSDmqGsZm/contest/219856/problem/F
+
 F. Way Too Long Words
 time limit per test1 second
 memory limit per test256 megabytes

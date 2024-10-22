@@ -32,6 +32,8 @@ int main() {
 
 
 /*
+https://codeforces.com/group/MWSDmqGsZm/contest/219856/problem/I
+
 I. Palindrome
 time limit per test1 second
 memory limit per test256 megabytes

@@ -25,6 +25,9 @@ int main() {
 
 
 /*
+https://codeforces.com/group/MWSDmqGsZm/contest/219856/problem/G
+
+
 G. Conversion
 time limit per test2 seconds
 memory limit per test64 megabytes
