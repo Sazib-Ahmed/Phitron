@@ -1,4 +1,25 @@
+#include <stdio.h>
+#include <string.h>
 
+int main() {
+    char s[10000001];
+    scanf("%s", s);
+
+    int length = strlen(s), freq[26] = {0};
+    for (int i = 0; i < length; i++) {
+        if(s[i] >= 'a' && s[i] <= 'z') {
+            freq[s[i]-'a']++;
+        }
+    }
+
+    for (int i = 0; i < 26; i++) {
+        if (freq[i] > 0) {
+            printf("%c : %d\n", i + 'a', freq[i]);
+        }
+    }
+
+    return 0;
+}
 
 /*
 https://codeforces.com/group/MWSDmqGsZm/contest/219856/problem/J
