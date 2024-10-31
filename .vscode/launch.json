@@ -3,11 +3,22 @@
   "configurations": [
     {
       "name": "C/C++ Runner: Debug Session",
-      "type": "lldb",
+      "type": "cppdbg",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/md.sazibahmed/Downloads/Phitron/Week_4/Module_14.5(practice_day_01)",
-      "program": "/Users/md.sazibahmed/Downloads/Phitron/Week_4/Module_14.5(practice_day_01)/build/Debug/outDebug"
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Github/Phitron/Week_4/Module_15.5(practice_day_02)",
+      "program": "c:/Github/Phitron/Week_4/Module_15.5(practice_day_02)/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
     }
   ]
 }
