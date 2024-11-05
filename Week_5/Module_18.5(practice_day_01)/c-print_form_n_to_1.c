@@ -4,7 +4,12 @@ void print_rec(int n) {
     if(n < 1) {
         return;
     }
-    printf("%d ", n);
+    printf("%d", n);
+
+    //To avoid trailing spaces printing space only if there is more number to print.
+    if (n > 1) {
+        printf(" ");
+    }
     print_rec(--n);
 }
 
