@@ -2,7 +2,7 @@
 
 void maxMin(int *a, int n, int *maxmin) {
     *(maxmin) = *(maxmin + 1) = *a; // Initialize both max and min to the first element
-    for (int i = 0; i < n; i++) {
+    for (int i = 1; i < n; i++) {
         if (maxmin[0] < *(a + i)) {
             maxmin[0] = *(a + i);
         }
