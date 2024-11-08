@@ -1,21 +1,85 @@
 //Same same but different
 #include <stdio.h>
 #include <string.h>
+#include <limits.h>
 
 int main() {
     char s[3][105];
     for (int i = 0; i < 3; i++) {
-        //fgets(s[i], sizeof(s[i]), stdin);
         scanf("%s", s[i]);
-        int len = strlen(s[i]);
-        //printf("%d\n", len);
     }
 
-    int comp = strcmp(s[], 
-    printf("%d\n", len);
+    int len = strlen(s[0]);
+    int min = INT_MAX;
+    for (int i = 0; i < 3; i++) {
+        int count = 0;
+        for (int j = 0; j < len; j++) {
+            int a, b;
+            if (i == 0) {
+                a = 1;
+                b = 2;
+            }
+            else if (i == 1) {
+                a = -1;
+                b = 1;
+            }
+            else if (i == 2) {
+                a = -2;
+                b = -1;
+            }
+
+            if(s[i][j] != s[i + a][j]) {
+                count++;
+            }
+            if(s[i][j] != s[i + b][j]) {
+                count++;
+            }
+        }
+        if (min > count) min = count;
+    }
+
+    printf("%d\n", min);
+    return 0;           
 }
 
+//More Optimized
+/*
+#include <stdio.h>
+#include <string.h>
 
+int main() {
+    char s[3][105];
+    for (int i = 0; i < 3; i++) {
+        scanf("%s", s[i]);
+    }
+
+    int len = strlen(s[0]);
+    int totalChanges = 0;
+
+    for (int j = 0; j < len; j++) {
+        // Characters at position j in each string
+        char ch1 = s[0][j];
+        char ch2 = s[1][j];
+        char ch3 = s[2][j];
+
+        // Case analysis for the characters at each position j
+        if (ch1 == ch2 && ch2 == ch3) {
+            // All characters are the same - no changes needed
+            continue;
+        } else if (ch1 == ch2 || ch1 == ch3 || ch2 == ch3) {
+            // Two characters are the same, one is different - one change needed
+            totalChanges += 1;
+        } else {
+            // All characters are different - two changes needed
+            totalChanges += 2;
+        }
+    }
+
+    printf("%d\n", totalChanges);
+    return 0;
+}
+
+*/
 
 
 
