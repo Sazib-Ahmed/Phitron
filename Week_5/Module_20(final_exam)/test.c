@@ -1,7 +1,19 @@
+//Same same but different
+#include <stdio.h>
+#include <string.h>
 
+int main() {
+    char s[3][105];
+    for (int i = 0; i < 3; i++) {
+        //fgets(s[i], sizeof(s[i]), stdin);
+        scanf("%s", s[i]);
+        int len = strlen(s[i]);
+        //printf("%d\n", len);
+    }
 
-
-
+    int comp = strcmp(s[], 
+    printf("%d\n", len);
+}
 
 
 
@@ -26,6 +38,42 @@
 
 
 /*
+//Find the Missing Number
+#include <stdio.h>
+
+void findMissingNum(long long int m, int a, int b, int c) {
+    if (m == 0) {
+        printf("%d ", 0);
+        return;
+    }
+
+    long long int mul = (long long int)(a * b * c);
+    if (mul == 0 || m % mul != 0) {
+        printf("%d ", -1);
+        return;
+    }
+
+    long long int d = m / mul;
+    printf("%lld ", d);
+}
+
+int main() {
+    int t = 0;
+    scanf("%d", &t);
+
+    long long int m;
+    int a, b, c;
+    for (int i = 0; i < t; i++) {
+        scanf("%lld %d %d %d", &m, &a, &b, &c);
+        findMissingNum(m, a, b, c);
+        printf("\n");
+    }
+
+    return 0;
+}
+
+
+
 //Swap in Matrix
 #include <stdio.h>
 
