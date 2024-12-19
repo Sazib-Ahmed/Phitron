@@ -8,7 +8,7 @@ class Node{
 
     Node(int val){
         this->val = val;
-        this->next = NULL;
+        this->next = nullptr;
     }
 };
 
@@ -22,7 +22,7 @@ int main()
     b->next = c;
 
     Node* temp = head_a;
-    while(temp != NULL){
+    while(temp != nullptr){
         cout << temp->val << " ";
         temp = temp->next;
     }
