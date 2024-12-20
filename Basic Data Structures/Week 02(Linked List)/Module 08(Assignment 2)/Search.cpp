@@ -49,10 +49,10 @@ void search(Node* head, int x){
             is_psnt = true;
             break;
         }
+        temp = temp->next;
     }
 
     cout << (is_psnt? indx : -1) << endl;
-
 }
 
 int main(){
@@ -63,16 +63,14 @@ int main(){
         Node* head = NULL;
         Node* tail = NULL;
         int v, x;
-        while (cin >> v)
+        while (cin >> v){
             if (v == -1) break;
             insert_at_tail(head, tail, v);
         }
 
         cin >> x;
-
-
-
-
+        search(head, x);
+    }
     return 0;
 }
 
