@@ -45,15 +45,22 @@ void print_linked_list(Node *head) {
     }
 }
 
-void print_size(Node *head) {
+void if_duplicate_present(Node *head) {
+    vector<int> freq(105, 0);
     Node *temp = head;
-    int count = 0;
+    bool dup = false;
     while (temp != nullptr) {
-        count++;
+        freq[temp->val]++;
+        if(freq[temp->val] > 1){
+            dup = true;
+            break;
+        }
         temp = temp->next;
     }
-    cout << count << endl;
+    cout << (dup? "YES" : "NO") << endl;
+
 }
+
 
 
 int main() {
@@ -63,14 +70,15 @@ int main() {
         if (v == -1) break;
         enter_new_element(head, v);
     }
+    if_duplicate_present(head);
     //print_linked_list(head);
-    print_size(head);
     return 0;
 }
 
 /*
-Question: Take a singly linked list as input and print the size of the linked list.
+Question: Take a singly linked list as input and check if the linked list contains
+any duplicate value. Y ou can assume that the maximum value will be 100.
 Sample Input Sample Output
-2 1 5 3 4 8 9 -1 7
-5 1 4 5 -1 4
+5 4 8 6 2 1 -1 NO
+2 4 5 6 7 4 -1 YES
 */
