@@ -55,9 +55,10 @@ void print_middle_element(Node *head) {
     temp = head;
     double middel_indx = count/2;
     
-    for(int i = 0; i < middel_indx; i++) {
+    while (middel_indx--) {
         temp = temp->next;
     }
+
     cout << temp->val;
     if (count%2 == 0) cout << ' ' << temp->next->val << endl;
     
