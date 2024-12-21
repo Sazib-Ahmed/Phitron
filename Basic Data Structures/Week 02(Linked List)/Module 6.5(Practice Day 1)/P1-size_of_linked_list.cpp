@@ -45,6 +45,16 @@ void print_linked_list(Node *head) {
     }
 }
 
+void print_size(Node *head) {
+    Node *temp = head;
+    int count = 0;
+    while (temp != nullptr) {
+        count++;
+        temp = temp->next;
+    }
+    cout << count << endl;
+}
+
 
 int main() {
     Node *head = nullptr;
@@ -53,6 +63,7 @@ int main() {
         if (v == -1) break;
         enter_new_element(head, v);
     }
-    print_linked_list(head);
+    //print_linked_list(head);
+    print_size(head);
     return 0;
 }
