@@ -1,50 +1,45 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include <string>
-#include <map>
-#include <set>
-#include <queue>
-#include <stack>
-#include <cmath>
-#include <cstdio>
-#include <cstdlib>
-#include <cstring>
-#include <climits>
+// #include <iostream>
+// #include <vector>
+// #include <algorithm>
+// #include <string>
+// #include <map>
+// #include <set>
+// #include <queue>
+// #include <stack>
+// #include <cmath>
+// #include <cstdio>
+// #include <cstdlib>
+// #include <cstring>
+// #include <climits>
 
-//#include<bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
 int main() {
     int t = 0;
-    string s;
-    stack<char> st1, st2;
-
     cin >> t;
 
     while (t--) {
+        string s;
+        stack<char> st1, st2;
         cin >> s;
+
         for (char c : s) {
-            //cout << c << " ";
             st1.push(c);
         }
 
-        while (!st1.empty() && !st2.empty()) {
-            if (!st1.empty()) {
-                char temp = st1.top();
-                st1.pop();
-                st2.push(temp);
-            }
+        while (!st1.empty()) {
+            st2.push(st1.top());
+            st1.pop();
 
-            if(st1.top() == st2.top()) {
+            while (!st1.empty() && !st2.empty() && (st1.top() != st2.top())) {
                 st1.pop();
                 st2.pop();
             }
         }
-        cout << (st1.empty() ? "YES" : "NO") << endl;
+        cout << (st2.empty() ? "YES" : "NO") << endl;
     }
-
-
+    return 0;
 }
 
 
