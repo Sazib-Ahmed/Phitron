@@ -3,11 +3,22 @@
   "configurations": [
     {
       "name": "C/C++ Runner: Debug Session",
-      "type": "lldb",
+      "type": "cppdbg",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/md.sazibahmed/Downloads/Phitron/C/test",
-      "program": "/Users/md.sazibahmed/Downloads/Phitron/C/test/build/Debug/outDebug"
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Github/Phitron/Introduction to Algorithms/Week 05(Bonus Week)/Module 17(KnapSack Variation)",
+      "program": "c:/Github/Phitron/Introduction to Algorithms/Week 05(Bonus Week)/Module 17(KnapSack Variation)/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
     }
   ]
 }
